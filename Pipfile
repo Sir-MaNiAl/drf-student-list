@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+pyyaml = "*"
+uritemplate = "*"
+
+[dev-packages]
+pylint = "*"
+pycodestyle = "*"
+jedi = "*"
+mypy = "*"
+yapf = "*"
+django-stubs = "*"
+pylint-django = "*"
+djangorestframework-stubs = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+migrate = "python ./src/manage.py migrate"
+dev_server = "python ./src/manage.py runserver"
